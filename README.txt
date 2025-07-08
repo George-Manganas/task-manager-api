@@ -31,14 +31,3 @@ The application exposes the following endpoints once it's running (`mvn spring-b
 | POST   | `/api/tasks`       | Create a new task       |
 | PUT    | `/api/tasks/{id}`  | Update an existing task |
 | DELETE | `/api/tasks/{id}`  | Delete a task           |
-
-### Sample JSON Body
-
-Used with `POST` and `PUT` requests:
-
-```json
-{
-  "title": "Complete Spring Boot project",
-  "description": "Finish implementation and upload to GitHub",
-  "completed": false
-}
