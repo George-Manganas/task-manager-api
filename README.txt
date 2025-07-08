@@ -31,3 +31,4 @@ The application exposes the following endpoints once it's running (`mvn spring-b
 | POST   | `/api/tasks`       | Create a new task       |
 | PUT    | `/api/tasks/{id}`  | Update an existing task |
 | DELETE | `/api/tasks/{id}`  | Delete a task           |
+| DELETE | `/api/tasks/{id}`  | Delete a task           |
