@@ -13,6 +13,7 @@ import java.util.Optional;
  * REST Controller that exposes endpoints for managing tasks.
  * Handles incoming HTTP requests and delegates business logic to TaskService.
  */
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api/tasks")
 public class TaskController {
