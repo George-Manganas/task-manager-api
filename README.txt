@@ -1,18 +1,20 @@
-# Task Manager API
 
-A simple and complete Task Management REST API built with Java, Spring Boot, and H2 Database.  
-This project demonstrates how to build a full-featured backend application using Spring Boot, following best practices like MVC architecture, layered service design, and RESTful API standards.
+---
 
 ## Features
 
-- Create, read, update, and delete tasks
-- In-memory H2 database for simplicity (no external setup)
-- RESTful endpoints using Spring Web
-- Project structured with clear separation of concerns
-- Tested with Postman
+- Full CRUD task management
+- RESTful API using Spring Boot
+- React frontend with API integration
+- In-memory H2 database (no external setup required)
+- Clean project structure following MVC and service layering
+- Tested with Postman and browser-based UI
+
+---
 
 ## Technologies Used
 
+### Backend
 - Java 21
 - Spring Boot 3.5
 - Spring Web
@@ -20,15 +22,31 @@ This project demonstrates how to build a full-featured backend application using
 - H2 Database
 - Maven
 
+### Frontend
+- React 18+
+- JavaScript (ES6+)
+- Axios (API requests)
+- Bootstrap (UI styling)
+
+---
+
 ## API Endpoints
 
-The application exposes the following endpoints once it's running (`mvn spring-boot:run` or run directly via IDE):
+Once the Spring Boot app is running (`mvn spring-boot:run` or from your IDE), the following endpoints are available at `http://localhost:8080/api/tasks`:
 
 | Method | Endpoint           | Description             |
 |--------|--------------------|-------------------------|
-| GET    | `/api/tasks`       | Retrieve all tasks      |
-| GET    | `/api/tasks/{id}`  | Retrieve task by ID     |
+| GET    | `/api/tasks`       | Get all tasks           |
+| GET    | `/api/tasks/{id}`  | Get task by ID          |
 | POST   | `/api/tasks`       | Create a new task       |
 | PUT    | `/api/tasks/{id}`  | Update an existing task |
 | DELETE | `/api/tasks/{id}`  | Delete a task           |
-| DELETE | `/api/tasks/{id}`  | Delete a task           |
+
+---
+
+## Running the Project
+
+### 1. Backend (Spring Boot)
+```bash
+cd task-manager-api/task-manager-api
+mvn spring-boot:run
